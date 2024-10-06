@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://ci17qg18ndfdj"]
+
+[ext_resource type="Script" path="res://color_rect.gd" id="1_4t70a"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0vdvp"]
+font_color = Color(0, 0, 0, 1)
+
+[node name="KeyScene" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_4t70a")
+key = null
+key_text = null
+initialColor = Color(0, 0, 0, 1)
+pressedColor = Color(1, 1, 1, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+label_settings = SubResource("LabelSettings_0vdvp")
+horizontal_alignment = 1
+vertical_alignment = 1
